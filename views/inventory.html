@@ -1,0 +1,81 @@
+<div class=" fix-container">
+    <div class="row">
+        <div class="col s12">
+            <div class="left">
+                <h2 class="title-name" ng-bind="sub.title"></h2>
+                <h4 class="title-sub">
+                    <span class="b-label">Manage your products / services.</span>
+                </h4>
+            </div>
+            <div class="right">
+                <div class="c-btn btn-green">Add New Item </div>
+                <div class="c-btn btn-gradient-icon"> Export to CSV </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="line">
+<div class="container">
+    <div class="dropd">
+        <select class=" dropdown-container">
+            <option class="dropdown-label">All items</option>
+            <option class="dropdown-label">Open</option>
+            <option class="dropdown-label">Closed</option>
+        </select>
+    </div>
+    <div class="dropd">
+        <select class="dropdown-container-min">
+            <option class="dropdown-label">10</option>
+            <option class="dropdown-label">20</option>
+            <option class="dropdown-label">50</option>
+            <option class="dropdown-label">100</option>
+        </select>
+    </div>
+
+    <div class="delete-all-icon" id="dl-icon" style="display:none">
+        <img src="./views/assets/icons/dashboard/delete-button-pngrepo-com.png" height="20" title="Delete Item(s)">
+    </div>
+
+    <div class="search">
+        <input class="search-input" type="text" placeholder="Enter item to search..."> </div>
+    <table>
+        <thead class="bz-tablecell">
+            <tr class="bz-tablecell">
+                <th><b>Image</b></th>
+                <th><b>Name</b></th>
+                <th><b>Price</b></th>
+                <th><b>Sales Price</b></th>
+                <th><b>In Stock</b></th>
+                <th><b>Type</b></th>
+                <th><b>Barcode</b></th>
+                <th><b>Date</b></th>
+                <th><b>Actions</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bz-tablecell">
+                <td><img src="./views/assets/img/other/flour.png" height="50px;"> </td>
+                <td style="font-weight: 600">Azam Flour</td>
+                <td>TZS. 3,500.00</td>
+                <td>TZS. 3,300.00</td>
+                <td>4</td>
+                <td>Food</td>
+                <td></td>
+                <td> 21-02-2017 </td>
+
+                <td><a href="#">Manage</a></td>
+            </tr>
+            <tr class="bz-tablecell">
+                <td><img src="./views/assets/img/other/oil.png" height="50px;"></td>
+                <td style="font-weight: 600">Cooking Oil</td>
+                <td>TZS. 2,700.00</td>
+                <td>TZS. 2,500.00</td>
+                <td>2</td>
+                <td>Food</td>
+                <td>190340376559</td>
+                <td> 13-02-2017 </td>
+                <td><a href="#">Manage</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

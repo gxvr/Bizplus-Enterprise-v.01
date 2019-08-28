@@ -1,0 +1,77 @@
+<head ng-controller="HomeCtrl">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./views/assets/css/style.css">
+    <link rel="stylesheet" href="./views/assets/css/windows.css">
+    <link rel="stylesheet" href="./views/assets/css/fonts.css">
+    <link rel="stylesheet" href="./views/assets/css/forms.css">
+    <link rel="stylesheet" href="./views/assets/css/materialize.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css' />
+</head>
+
+<body class="b-about">
+    <div class="about">
+        <div class="bottom-about fix-about" style="margin-top: 40px;"> <span class="sp-expire">Your license has expired</span>
+            <p class="about-p">Please enter your licence details below. If you purchased online,<br>these will be in your receipt email</p>
+            <form>
+                <div class="row">
+                    <div class="input-group ">
+                        <div class="i-label ">
+                            <label for="input">Email</label>
+                        </div>
+                        <input type="text" required="required" />
+                    </div>
+                    <div class="input-group ">
+                        <div class="i-label ">
+                            <label for="credit-card-mask">Product Key: </label>
+                        </div>
+                        <input id="credit-card-mask" type="text" required="required" />
+                    </div>
+                    <div>
+                        <input class="btn-green btn-blank left" type="submit" value="Validate Product Key" style="background-color: #00bb28; color: white"> </div>
+                </div>
+            </form>
+            <p class="about-p">Need help? Visit <a style="text-decoration: underline; color: #333bff" href="https://bizplus.net">bizplus.net </a>for more information.
+                <br> For feedback and support inquiries, please email <a style="text-decoration: underline; color: #333bff" mailto="support@bizplus.net">support@bizplus.net </a> or <a style="text-decoration: underline; color: #333bff" href="https://bizplus.net/contact">contact us online</a> </p>
+        </div>
+    </div>
+</body>
+<!-- Insert this line above script imports  -->
+<script>
+    if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }
+
+</script>
+<script src='views/assets/js/jquery.min.js'></script>
+<script src='views/assets/js/jquery.mask.min.js'></script>
+<script>
+    // PRODUCT KEY NUMBER MASK
+    let creditCardNumberMaskBehavior = function(val) {
+        return val.replace(/\D/g, '').length === 16 ? '0000-0000-0000-0000' : '0000 000000 000009';
+    };
+    let creditCardNumberMaskOptions = {
+        onKeyPress: function(val, e, field, options) {
+            field.mask(creditCardNumberMaskBehavior.apply({}, arguments), options);
+        }
+    };
+    $('#credit-card-mask').mask(creditCardNumberMaskBehavior, creditCardNumberMaskOptions);
+    // TELEPHONE MASK
+    let telephoneMaskBehavior = function(val) {
+        return val.replace(/\D/g, '').length === 11 ? '(00) 00000 0000' : '(00) 0000 00009';
+    };
+    let telephoneMaskOptions = {
+        onKeyPress: function(val, e, field, options) {
+            field.mask(telephoneMaskBehavior.apply({}, arguments), options);
+        }
+    };
+    $('#telephone-mask').mask(telephoneMaskBehavior, telephoneMaskOptions);
+
+</script>
+<!-- Insert this line after script imports -->
+<script>
+    if (window.module) module = window.module;
+
+</script>

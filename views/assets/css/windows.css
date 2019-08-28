@@ -1,0 +1,81 @@
+.b-about {
+    background-color: #fff;
+}
+
+/*Windows*/
+
+.top-about {
+    height: 140px;
+    background-image: url(../img/about/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.logo-about {
+    margin-top: 16px;
+    margin-right: 12px;
+
+}
+
+.title-about {
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.2 !important;
+}
+
+.fix-top {
+    padding-top: 25px;
+}
+
+.fix-about {
+    margin-left: 40px;
+}
+
+.bottom-about {
+}
+
+
+.sp-about {
+    font-weight: 600;
+    color: #909090;
+}
+
+
+.sp-expire {
+    color: #000;
+    font-size: 24px;
+}
+
+
+.about-p {
+    font-size: 12.3px;
+    line-height: 18px;
+}
+
+
+/*Splash*/
+
+.splash {
+    height: 300px;
+    overflow: hidden;
+
+
+}
+
+.top-splash {
+    height: 300px;
+    background-image: url(../img/splash/Splash-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.load {
+    font-size: 12px;
+    margin-top: 120px;
+    margin-left: 40px;
+    color: #fffdfdcc;
+    margin-right: 40px;
+}

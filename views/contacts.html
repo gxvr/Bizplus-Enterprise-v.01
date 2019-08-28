@@ -1,0 +1,266 @@
+<div class=" fix-container">
+    <div class="row">
+        <div class="col s12">
+            <div class="left">
+                <h2 class="title-name" ng-bind="sub.title"></h2>
+                <h4 class="title-sub">
+                    <span class="b-label">Manage customer or company contacts.</span>
+                </h4>
+            </div>
+
+            <div class="right">
+                <div class="c-btn btn-green">
+                    Add New Contact
+                </div>
+
+                <div class="c-btn btn-gradient-icon">
+                    Export to CSV
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<hr class="line">
+
+<div class="container">
+
+    <div class="dropd">
+        <select class=" dropdown-container">
+            <option class="dropdown-label">All Contacts</option>
+            <option class="dropdown-label">Customers</option>
+            <option class="dropdown-label">Distributors</option>
+            <option class="dropdown-label">Vendors</option>
+        </select>
+    </div>
+
+    <div class="dropd">
+        <select class="dropdown-container-min">
+            <option class="dropdown-label">10</option>
+            <option class="dropdown-label">20</option>
+            <option class="dropdown-label">50</option>
+            <option class="dropdown-label">100</option>
+        </select>
+    </div>
+
+    <div class="delete-all-icon" id="dl-icon" style="display:none">
+        <img src="./views/assets/icons/dashboard/delete-button-pngrepo-com.png" height="20" title="Delete Item(s)">
+    </div>
+
+    <div class="search">
+        <input class="search-input" type="text" placeholder="Enter keyword to search...">
+    </div>
+
+
+
+    <table>
+        <thead class="bz-tablecell">
+            <tr>
+                <th><b>Image</b></th>
+                <th><b>Contact Name</b></th>
+                <th><b>Contact Type</b></th>
+                <th><b>Phone</b></th>
+                <th><b>Email</b></th>
+                <th><b>Status</b></th>
+                <th><b>Actions</b></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="bz-tablecell">
+                <td>
+                    <img src="./views/assets/img/other/pro_7.png" class="pro-pic">
+                </td>
+                <td data-priority="1" style="font-weight: 600">Mary Janelle</td>
+                <td data-priority="2">Customer</td>
+                <td data-priority="4">+255 675 030 288</td>
+                <td data-priority="3">maryjanelle@me.com</td>
+                <td><span class="approved" style="border-radius: 0 !important;">Available</span></td>
+                <td data-priority="7"><a href="#">Manage</a></td>
+            </tr>
+            <tr class="drawer bz-tablecell">
+                <td colspan="7">
+                    <ul>
+                        <li>Wal-Mart Stores, Inc</li>
+                        <li>Customer</li>
+                        <li>$476 Billion in Revenue</li>
+                        <li>2,200,000 Employees</li>
+                        <li>Headquartered in the United States</li>
+                        <li>CEO'd by Doug McMillon</li>
+                    </ul>
+                </td>
+            </tr>
+
+
+            <tr class="bz-tablecell">
+                <td>
+                    <img src="./views/assets/img/other/pro_6.png" class="pro-pic">
+                </td>
+                <td data-priority="1" style="font-weight: 600">Steve Markus</td>
+                <td data-priority="2">Vendor</td>
+                <td data-priority="4">+255 675 030 288</td>
+                <td data-priority="3">stv@me.com</td>
+                <td><span class="approved" style="border-radius: 0 !important;">Available</span></td>
+                <td data-priority="7"><a href="#">Manage</a></td>
+            </tr>
+            <tr class="drawer bz-tablecell">
+                <td colspan="7">
+                    <ul>
+                        <li>Wal-Mart Stores, Inc</li>
+                        <li>Vendor</li>
+                        <li>$476 Billion in Revenue</li>
+                        <li>2,200,000 Employees</li>
+                        <li>Headquartered in the United States</li>
+                        <li>CEO'd by Doug McMillon</li>
+                    </ul>
+                </td>
+            </tr>
+
+
+            <tr class="bz-tablecell">
+                <td>
+                    <img src="./views/assets/img/other/person.jpg" class="pro-pic">
+                </td>
+                <td data-priority="1" style="font-weight: 600">Mary Janelle</td>
+                <td data-priority="2">Distributor</td>
+                <td data-priority="4">+255 675 030 288</td>
+                <td data-priority="3">maryjanelle@me.com</td>
+                <td><span class="cancelled" style="border-radius: 0 !important;">Not Available</span></td>
+                <td data-priority="7"><a href="#">Manage</a></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <div id="siteWrapper" class="site-wrapper">
+        <!--Slideout Drawer-->
+        <div id="slideout" class="slideout">
+
+            <div class="slideout-header">
+                <div class="hint-flex">
+                    <span class="section-title ">Add New Expense
+                    </span>&ensp;
+                    <div class="hasTooltip tooltip-bottom">
+                        <img src="./views/assets/icons/dashboard/help.png" height="15px;" class="card-info">
+                        <i class="tip" style="font-size: 14px">Most tooltips are short<br>but you can add line breaks.</i>
+                    </div>
+                </div>
+
+                <a id="slideoutCloseButton" class="slideout-close" title="Close">
+                    <img style="cursor: pointer;" src="./views/assets/icons/dashboard/x.svg" height="25px;" class="card-info">
+                </a>
+            </div>
+
+            <div class="slideout-content">
+                <section class="slideout-section">
+
+                    <div class="input-group ">
+                        <div class="i-label ">
+                            <label for="input">Expense Name</label>
+                        </div>
+                        <input type="text" required="required" />
+                    </div>
+
+                    <div class="input-group ">
+                        <div class="hint-flex">
+
+                            <div>
+                                <div class="i-label">
+                                    <label for="input">Amount </label>
+                                </div>
+                                <input class="input-sm left" type="number" style="width: 95% !important;" />
+                            </div>
+
+                            <div>
+                                <div class="i-label">
+                                    <label for="input">Reference Number</label>
+                                </div>
+                                <input class="input-sm left" type="number" />
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+                    <div class="input-group ">
+                        <div class="i-label ">
+                            <label for="input">Vendor</label>
+                        </div>
+                        <input type="text" />
+                    </div>
+
+                    <div class="input-group ">
+                        <div class="i-label ">
+                            <label for="input">Date</label>
+                        </div>
+                        <input type="text" />
+                    </div>
+
+                    <div class="input-group ">
+                        <div class="i-label ">
+                            <label for="input">Paid Through </label>
+                        </div>
+                        <div class="form-s">
+                            <select class="form-select">
+                                <option>Cash</option>
+                                <option>Petty Cash</option>
+                                <option>Receipt</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <input class="btn-green btn-blank right" type="submit" value="Add Expense">
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <div id="slideoutMask" class="slideout-mask"></div>
+    </div>
+
+</div>
+
+<script>
+    //Slider-Drawer
+    // Cache references to DOM nodes.
+    var siteWrapper = document.querySelector('#siteWrapper');
+    var hamburgerMenuButton = document.querySelector('#sliderButton');
+    var slideoutCloseButton = document.querySelector('#slideoutCloseButton');
+
+    function openSlideoutDrawer() {
+        siteWrapper.classList.add('slideout-open');
+        slideoutCloseButton.focus();
+    }
+
+    function closeSlideoutDrawer() {
+        siteWrapper.classList.remove('slideout-open');
+        hamburgerMenuButton.focus();
+    }
+
+    // Bind event listeners.
+    hamburgerMenuButton.addEventListener('click', openSlideoutDrawer, false);
+    slideoutCloseButton.addEventListener('click', closeSlideoutDrawer, false);
+
+</script>
+
+<script>
+    $('.drawer').hide();
+    $('.more').show();
+
+    /* Open and Close the drawer */
+    $('.drawer').prev('tr').on('click', function() {
+        var tr = $(this);
+        tr.toggleClass('shadow');
+        tr.next('.drawer').toggle();
+    });
+
+</script>

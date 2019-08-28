@@ -1,0 +1,188 @@
+.body-wrap {
+    background-color: #fff !important;
+    min-height: 500px;
+    margin: 20px auto;
+    font-size: 12px;
+    width: 1000px;
+}
+
+.body-wrap .roll-card-learn {
+    width: 100%;
+    position: relative;
+    transition: all 0.6s ease-in-out;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.body-wrap .roll-card-learn h1,
+.body-wrap .roll-card-learn h2,
+.body-wrap .roll-card-learn h3 {
+    text-align: center;
+}
+
+.body-wrap .roll-card-learn.roll .roll-card-front {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.body-wrap .roll-card-learn.roll .roll-card-slide {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.body-wrap .roll-card-learn.roll .roll-card-slide .btn-close {
+    left: 30%;
+    opacity: 1;
+}
+
+.body-wrap .roll-card-learn .roll-card-front,
+.body-wrap .roll-card-learn .roll-card-slide {
+    width: 100%;
+    transition: -webkit-filter 0.6s ease;
+    transition: filter 0.6s ease;
+    transition: filter 0.6s ease, -webkit-filter 0.6s ease;
+}
+
+.body-wrap .roll-card-learn .roll-card-front {
+    color: #4A4A4A;
+    min-height: 600px;
+}
+
+.body-wrap .roll-card-learn .roll-card-slide {
+    color: #4A4A4A;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    transition: all 0.4s ease-in-out;
+}
+
+.body-wrap .roll-card-learn .roll-card-slide .btn-close {
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: #FFF;
+    border: 2px solid #FFF;
+    background-color: #00ADEF;
+    position: absolute;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    top: 49%;
+    left: -50%;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.body-wrap .roll-card-learn .roll-card-slide .btn-close:hover {
+    background-color: #EC008B;
+}
+
+.body-wrap .roll-card-learn .roll-card-slide section.item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #7f9298;
+    color: #FFF;
+    padding: 2em;
+    position: absolute;
+    top: 2em;
+    bottom: 2em;
+    display: none;
+    margin-left: 33.3%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    box-shadow: -3px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.body-wrap .roll-card-learn .roll-card-slide section.item.active {
+    display: block;
+}
+
+.body-wrap .roll-card-learn p {
+    font-size: 16px;
+}
+
+.tableizer-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.tableizer-table,
+.tableizer-table th,
+.tableizer-table td {
+    border: 1px solid #dfe3e6;
+    padding: 0.8em 1em;
+}
+
+.tableizer-table th:first-child,
+.tableizer-table td:first-child {
+    text-align: left;
+}
+
+.tableizer-table th.hi,
+.tableizer-table td.hi {
+    color: #FFF;
+    font-weight: 600;
+    text-align: left;
+    background-color: #16558c;
+}
+
+.tableizer-table .tip {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding-right: 30px;
+}
+
+.tableizer-table .tip:hover {
+    color: #7f9298;
+}
+
+.tableizer-table .tip:hover:after {
+    background-color: #ff53b8;
+    color: #FFF;
+}
+
+.tableizer-table .tip:after {
+    content: "i";
+    color: #ff86cd;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 100;
+    font-family: georgia;
+    line-height: 15px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    border-radius: 50%;
+    border: 1px solid #ff53b8;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#xyz-balance-sheet {
+    width: 90%;
+}
+
+.empty-state {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #6b6b6b;
+    font-size: 13px;
+}
+
+.empty-state .top {
+    font-size: 16px !important;
+}

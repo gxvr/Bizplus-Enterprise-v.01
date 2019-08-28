@@ -1,0 +1,71 @@
+.chart {
+    margin-bottom: 32px;
+    margin-top: 32px;
+
+}
+
+.chart-padding {
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+
+.bar-set {
+
+    position: relative;
+}
+
+.bar-set:after {
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid #cfd0d4 !important;
+    width: 90%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    left: 50%;
+}
+
+
+.line-chart {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.chart-info {
+    padding: 11px;
+    margin-top: 25px;
+    margin-left: 20px;
+    position: relative;
+
+}
+
+
+.bar-green {
+    background-color: #add719;
+    height: 12px;
+    width: 35px !important;
+}
+
+.bar-red {
+
+    background-color: #f8601b;
+    height: 12px;
+    width: 35px !important;
+}
+
+.label-green {
+    font-size: 14px;
+    margin-left: 45px;
+    margin-top: -15px;
+}
+
+.line-cut {
+    width: 1.1px;
+    height: 60px;
+    position: absolute;
+    left: 140px;
+    top: 1px;
+    background: #cdd2d7;
+    margin: ;
+}

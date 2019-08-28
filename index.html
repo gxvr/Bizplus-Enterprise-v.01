@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bpApp" ng-controller="settingsController as ctrl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./views/assets/css/style.css">
+    <link rel="stylesheet" href="./views/assets/css/main.css">
+    <link rel="stylesheet" href="./views/assets/css/forms.css">
+    <link rel="stylesheet" href="./views/assets/css/table.css">
+    <link rel="stylesheet" href="./views/assets/css/fonts.css">
+    <link rel="stylesheet" href="./views/assets/css/materialize.min.css">
+    <link rel="stylesheet" href="./views/assets/css/charts.css">
+    <link rel="stylesheet" href="./views/assets/css/invoice.css">
+    <link rel="stylesheet" href="./views/assets/css/animate.css">
+    <link rel="stylesheet" href="./views/assets/vendors/datepicker/datepicker.min.css">
+    <!--
+    <script src='./views/assets/js/vendors/logerr.js'></script>
+    <script>
+        Logerr.init();
+    </script>
+-->
+</head>
+
+<body>
+
+    <div class="body">
+        <div class="container">
+            <div class="menu" id="menu">
+                <div class="title">
+                    <img class="logo" src="./views/assets/img/Logo.svg"> </div>
+                <ul>
+                    <li class="dashboard-item" data-dashboard="item1">
+                        <a ui-sref="home">
+                            <img class="icon" src="./views/assets/icons/dashboard/home.png" height="16">
+                            <b-link>{{ 'Home' | translate }}</b-link>
+                        </a>
+
+                    </li>
+                    <li class="dashboard-item" data-dashboard="item3">
+                        <a ui-sref="sales">
+                            <img class="icon" src="./views/assets/icons/dashboard/stat.png" height="16">
+                            <b-link>{{ 'Sales' | translate }}</b-link>
+                        </a>
+                        <span class="notification">8</span>
+
+                    </li>
+                    <li class="dashboard-item" data-dashboard="item2">
+                        <a ui-sref="expenses">
+                            <img class="icon" src="./views/assets/icons/dashboard/expense.png" height="16">
+                            <b-link>{{ 'Expenses' | translate }}</b-link>
+                        </a>
+                        <span class="notification">3</span>
+
+                    </li>
+                    <li class="dashboard-item" data-dashboard="item4">
+                        <a ui-sref="inventory">
+                            <img class="icon" src="./views/assets/icons/dashboard/inventory.png" height="16">
+                            <b-link>{{ 'Inventory' | translate }}</b-link>
+                        </a>
+                        <span class="notification">132</span>
+                    </li>
+                    <li class="dashboard-item" data-dashboard="item4">
+                        <a ui-sref="invoice">
+                            <img class="icon" src="./views/assets/icons/dashboard/invoice.png" height="16">
+                            <b-link>{{ 'Invoicing' | translate }}</b-link>
+                        </a>
+                    </li>
+
+                    <li class="dashboard-item" data-dashboard="item6">
+                        <a ui-sref="contacts">
+                            <img class="icon" src="./views/assets/icons/dashboard/person.png" height="16">
+                            <b-link>{{ 'Contacts' | translate }}</b-link>
+                        </a>
+                        <span class="notification">23</span>
+                    </li>
+                    <li class="dashboard-item" data-dashboard="item7">
+                        <a ui-sref="report">
+                            <img class="icon" src="./views/assets/icons/dashboard/report.png" height="16">
+                            <b-link>{{ 'Reports' | translate }}</b-link>
+                        </a>
+                    </li>
+                    <!--
+                    <li class="dashboard-item" data-dashboard="item7">
+                        <a ui-sref="plugins">
+                            <img class="icon" src="./views/assets/icons/dashboard/note.png" height="16">
+                            <b-link>Plugins</b-link>
+                        </a>
+                    </li>
+-->
+                    <li class="dashboard-item" data-dashboard="item8">
+                        <a ui-sref="settings">
+                            <img class="icon" src="./views/assets/icons/dashboard/settings.png" height="16">
+                            <b-link>{{ 'Settings' | translate }}</b-link>
+                        </a>
+                    </li>
+                </ul>
+
+                <!--                <span class="credit">Kiva Softwares Co. &copy; 2019</span>-->
+            </div>
+            <div class="panel">
+
+                <div class="header">
+                    <h1 id="partial-title">{{ 'Home' | translate }}</h1>
+                </div>
+
+                <div>
+
+                    <!-- Injecting HTML Files from views here -->
+                    <div ui-view>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Insert this line above script imports  -->
+        <script>
+            if (typeof module === 'object') {
+                window.module = module;
+                module = undefined;
+            }
+
+        </script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./views/assets/vendors/datepicker/datepicker.min.js"></script>
+        <script src='./views/assets/js/vendors/jquery.easy-pie-chart.js'></script>
+        <script src='./views/assets/js/vendors/popper.min.js'></script>
+        <script src='./views/assets/js/vendors/tableHTMLExport.js'></script>
+        <script src='./views/assets/js/vendors/materialize.js'></script>
+        <script src="./views/assets/js/vendors/angular.js"></script>
+        <script src="./views/assets/js/vendors/angular-ui-router.js"></script>
+        <!-- Angular Translate-->
+        <script src="./node_modules/angular-translate/dist/angular-translate.min.js"></script>
+        <script src="./node_modules/angular-translate/dist/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+        <!-- /Angular Translate-->
+
+        <!-- Angular - Pagination -->
+        <script src="node_modules/angular-utils-pagination/dirPagination.js"></script>
+        <!-- App -->
+        <script src='app/app.js'></script>
+        <script src="controllers/homeController.js"></script>
+        <script src="controllers/salesController.js"></script>
+        <script src="controllers/expensesController.js"></script>
+        <script src="controllers/inventoryController.js"></script>
+        <script src="controllers/invoiceController.js"></script>
+        <script src="controllers/pluginsController.js"></script>
+        <script src="controllers/reportController.js"></script>
+        <script src="controllers/contactsController.js"></script>
+        <script src="controllers/settingsController.js"></script>
+        <!-- /Controllers -->
+
+
+        <script>
+            require('./services/dbService.js')
+
+        </script>
+
+        <!-- Filters -->
+        <script src="filters/currencyFilter.js"></script>
+        <!-- /Filters -->
+        <script src='views/assets/js/index.js'></script>
+
+        <!-- Insert this line after script imports -->
+        <script>
+            if (window.module) module = window.module;
+
+        </script>
+    </div>
+</body>
+
+</html>

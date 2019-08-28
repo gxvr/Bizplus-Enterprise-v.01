@@ -1,0 +1,218 @@
+<div class=" fix-container">
+    <div class="row">
+        <div class="col s12">
+            <div class="left">
+                <h2 class="title-name" ng-bind="business.name"></h2>
+                <div style="display: flex">
+                    <h4 class="title-sub">
+                        <span class="b-label"></span> {{::business.owner}} |
+                        <a ui-sref="settings " class="cursor-link">Edit company profile.</a>
+                    </h4>
+                    <div class='information-contextuel'> <span class='description'>Entity ID</span> <span>{{::business.key | currency}}</span> </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="env-advice" tabindex=0>
+                    <div class="env-advice_onscreen"> <span class="h-icon">
+                            <i class="fa fa-video-camera"></i>
+                        </span> <span>Need Help?</span> </div>
+                    <div class="env-advice_offscreen"> <span class="h-icon">
+
+                        </span> <span>Get started with our video tutorials.</span> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="line">
+<div class=" fix-container">
+    <div class="container">
+        <!-- Alert 01 -->
+        <div class="row">
+            <div class="col s12">
+                <div class="hint ">
+                    <div class="hint-flex"> <img class="hint-img" src="./views/assets/img/hint.svg" height="40"> <span class="hint-title">{{ 'NotificationTitle' | translate }}<br>
+                            <span class="hint-text">{{ 'NotificationMessage' | translate }} <a href="#" class="blue-link cursor-help">{{ 'NotificationLink' | translate }}</a></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mini card info -->
+        <!-- Min Card-->
+        <div class="row">
+            <div class="summary-container">
+                <div class="summary">
+                    <div class="ico ico-green"> <img src="./views/assets/icons/dashboard/sales.png" height="30px;" style="margin-top: 25px;"></div>
+                    <div class="info">
+                        <p class="number number-green">{{::stats.sales | filterCurrency}}</p>
+                        <p class="subtitle">Sales</p>
+                    </div>
+                </div>
+                <div class="summary">
+                    <div class="ico ico-red"> <img src="./views/assets/icons/dashboard/expenses.png" height="30px;" style="margin-top: 25px;"> </div>
+                    <div class="info">
+                        <p class="number number-red">{{::stats.expenses | filterCurrency}}</p>
+                        <p class="subtitle">Expense</p>
+                    </div>
+                </div>
+                <div class="summary">
+                    <div class="ico ico-yellow"> <img src="./views/assets/icons/dashboard/product.png" height="30px;" style="margin-top: 25px;"> </div>
+                    <div class="info">
+                        <p class="number number-yellow">{{::stats.balance | filterCurrency}}</p>
+                        <p class="subtitle">Balance</p>
+                    </div>
+                </div>
+                <div class="summary">
+                    <div class="ico"><img src="./views/assets/icons/dashboard/contact.png" height="25px;" style="margin-top: 25px;"></div>
+                    <div class="info">
+                        <p class="number">{{::stats.transactions | number}}</p>
+                        <p class="subtitle">Transactions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="row">
+                <div class="col s6">
+                    <div class="card-stat">
+                        <div class="card-top card-top-cl"> <span class="card-title">Total Expenses </span> <img src="./views/assets/icons/dashboard/help.png" height="15px;" class="card-info"> <span class="card-report"> <a href="#">View report</a></span> </div>
+                        <div class="card-middle">
+                            <div class="tab"> <a class="tablinks"><span class="t-link t-click c-m ">Ratio
+                                        of overall spendings</span></a> </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="tabcontent">
+
+                            </div>
+                            <div id="Monthly" class="tabcontent"> </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s6">
+                    <div class="card-stat">
+                        <div class="card-top card-top-cl"> <span class="card-title">Income and Expense</span> <img src="./views/assets/icons/dashboard/help.png" height="15px;" class="card-info"> <span class="card-report"> <a href="#">View report</a></span> </div>
+                        <div class="card-middle">
+                            <div class="tab"> <a class="tablinks"><span class="t-link t-click c-m ">Ratio
+                                        of yearly income and expenses</span></a> </div>
+                        </div>
+                        <div class="card-bottom bar-set"> </div>
+                        <div class="chart-info ">
+                            <div class="form-flex">
+                                <div class="left">
+                                    <div class="bar-green"> </div>
+                                    <p class="label-green">Income</p>
+                                    <div class="bar-red"> </div>
+                                    <p class="label-green">Expense</p>
+                                </div>
+                                <div class="line-cut"></div>
+                                <div class="right">
+                                    <div class="form-flex">
+                                        <div> <span style="color: #add719; line-height: 1.6;">Total Income<br> <span style="color: #000;  font-size: 16px; font-weight: 600;  margin-right: 50px">TZS.11,810.00</span> </span>
+                                        </div>
+                                        <div> <span style="color: #f8601b; line-height: 1.6;">Total Expense<br> <span style="color: #000;  font-size: 16px; font-weight: 600;  margin-right: 50px">TZS.6,610.00</span> </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12">
+                    <div class="card-stat">
+                        <div class="card-top card-top-cl"> <span class="card-title">Sales Summary</span> <img src="./views/assets/icons/dashboard/help.png" height="15px;" class="card-info"> <span class="card-report"> Year : <a href="#">2018</a></span> </div>
+                        <div class="card-middle"> <span class="t-link t-click c-m">Sales Performance for the Year</span> </div>
+                        <div class="card-bottom"> </div>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="row">
+                        <div class="quick-report">
+                            <div class="flex-report">
+                                <div class="report-statistic-box">
+                                    <div class="box-header">Sales Orders</div>
+                                    <div class="box-content">
+                                        <div class="sentTotal">117</div>
+                                    </div>
+                                    <div class="box-foot">
+                                        <div class="sendTime box-foot-left">Last updated
+                                            <br><span class="box-foot-stats"><strong>01-01-2019</strong></span></div>
+                                    </div>
+                                </div>
+                                <div class="report-statistic-box">
+                                    <div class="box-header">Receivables</div>
+                                    <div class="box-content delivery-rate" style="width: 130px; height: 130px;">
+                                        <div id="circle-first" class="percentage perc" data-percent="90">90%</div>
+                                    </div>
+                                    <div class="box-foot"><span class="arrow arrow-up"></span>
+                                        <div class="box-foot-left">Current
+                                            <br><span class="box-foot-stats"><strong>3708</strong> </span></div><span class="arrow arrow-down"></span>
+                                        <div class="box-foot-right">Overdue
+                                            <br><span class="box-foot-stats" title="% = unopened emails / delivered emails"><strong>120</strong> </span></div>
+                                    </div>
+                                </div>
+                                <div class="report-statistic-box">
+                                    <div class="box-header">Payables</div>
+                                    <div class="box-content open-rate" style="width: 130px; height: 130px;">
+                                        <div id="circle-second" class="percentage perc" data-percent="75">75%</div>
+                                    </div>
+                                    <div class="box-foot"><span class="arrow arrow-up"></span>
+                                        <div class="box-foot-left">Current
+                                            <br><span class="box-foot-stats"><strong>3090</strong> </span></div><span class="arrow arrow-down"></span>
+                                        <div class="box-foot-right">Overdue
+                                            <br><span class="box-foot-stats"><strong>120</strong> </span></div>
+                                    </div>
+                                </div>
+                                <div class="report-statistic-box">
+                                    <div class="box-header">Invoice Payments</div>
+                                    <div class="box-content click-to-open" style="width: 130px; height: 130px;">
+                                        <div id="circle-third" class="percentage perc" data-percent="50">50%</div>
+                                    </div>
+                                    <div class="box-foot"><span class="arrow arrow-up"></span>
+                                        <div class="box-foot-left">Paid
+                                            <br><span class="box-foot-stats"><strong>2060</strong> </span></div>
+                                        <div class="box-foot-right">Pending
+                                            <br><span class="box-foot-stats"><strong>120</strong> </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    $(function() {
+        $('#circle-first').easyPieChart({
+            scaleColor: false,
+            lineWidth: 5,
+            lineCap: 'round',
+            barColor: '#f5ab34',
+            size: 120,
+            animate: 500
+        });
+        $('#circle-second').easyPieChart({
+            scaleColor: false,
+            lineWidth: 5,
+            lineCap: 'round',
+            barColor: '#30afe4',
+            size: 120,
+            animate: 500
+        });
+        $('#circle-third').easyPieChart({
+            scaleColor: false,
+            lineWidth: 5,
+            lineCap: 'round',
+            barColor: '#80cdbe',
+            size: 120,
+            animate: 500
+        });
+    });
+
+</script>

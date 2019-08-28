@@ -1,0 +1,13 @@
+   {
+       "Home": "Home",
+       "Sales": "Sales",
+       "Expenses": "Expenses",
+       "Inventory": "Inventory",
+       "Invoicing": "Invoicing",
+       "Contacts": "Contacts",
+       "Reports": "Reports",
+       "Settings": "Settings",
+       "NotificationTitle": "Have Questions or Feedback?",
+       "NotificationMessage": "Consult Bizplus's booklet or documentation. If you need further help, please",
+       "NotificationLink": "contact our support team"
+   }
