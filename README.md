@@ -29,7 +29,7 @@ http-server
 
 ## Database
 
-Connection to the sqlite database is achieved using dbService 
+Connection to the sqlite database is achieved using dbService factory found inside services folder
 
 ```javascript
 "USE STRICT";
