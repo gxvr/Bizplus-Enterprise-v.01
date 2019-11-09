@@ -41,6 +41,13 @@ app.factory("dbService", function ($http) {
 
 ```
 
+## Technologies
+- AngularJS
+- NodeJS
+- SQlite 3
+- ElectronJS
+- HTML/JS/CSS
+
 ## Contributing
 For major changes, open an issue first to discuss what you would like to change.
 
