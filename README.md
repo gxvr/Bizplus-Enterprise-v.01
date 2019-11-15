@@ -53,7 +53,7 @@ For major changes, open an issue first to discuss what you would like to change.
 
 ## Bug / Feature Request
 
-If you find a bug, kindly open an issue here with your expected result.
+If you find a bug, open an issue with your expected result.
 
 ## Todo
 
