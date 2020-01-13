@@ -1,4 +1,8 @@
-# Note: Major refactoring needed
+# Note: 
+
+- Major refactoring 
+- This codebase should not be shared with people who are not collaborators
+
 
 # Bizplus Enterprise
 
