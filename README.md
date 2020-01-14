@@ -55,7 +55,7 @@ app.factory("dbService", function ($http) {
 - HTML/JS/CSS
 
 
-# Checklist
+## Checklist
 - SPA Approach First - Since we want to achieve look and feel of native app, content must be generated dynamically on the existing page itself. Angularjs/Vuejs are great on this type of approach.
 
 
