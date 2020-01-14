@@ -60,6 +60,14 @@ app.factory("dbService", function ($http) {
 
 - Follow Microsoft Desktop Design Guidelines >>> https://docs.microsoft.com/en-us/windows/win32/uxguide/guidelines for Windows
 
+- Browser Caching (lot of it..I guess)
+
+- Smooth animations (Transitions, Button clicks, Awaiting time etc.) to match that of native desktop application
+
+- Prevent browser options (Text selection, right clicking etc.)
+
+- Follow native pixel measuremements
+
 
 ## Contributing
 For major changes, open an issue first to discuss what you would like to change.
