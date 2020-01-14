@@ -54,6 +54,11 @@ app.factory("dbService", function ($http) {
 - ElectronJS
 - HTML/JS/CSS
 
+
+# Checklist
+- SPA Approach First - Since we want to achieve look and feel of native app, content must be generated dynamically on the existing page itself. Angularjs/Vuejs are great on this type of approach.
+
+
 ## Contributing
 For major changes, open an issue first to discuss what you would like to change.
 
