@@ -56,7 +56,9 @@ app.factory("dbService", function ($http) {
 
 
 ## Checklist
-- SPA Approach First - Since we want to achieve look and feel of native app, content must be generated dynamically on the existing page itself. Angularjs/Vuejs are great on this type of approach.
+- SPA Approach - Since we want to achieve look and feel of native app, content must be generated dynamically on the existing page itself. Angularjs/Vuejs are great on this type of approach.
+
+- Follow Microsoft Desktop Design Guidelines >>> https://docs.microsoft.com/en-us/windows/win32/uxguide/guidelines for Windows
 
 
 ## Contributing
