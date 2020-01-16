@@ -60,7 +60,7 @@ app.factory("dbService", function ($http) {
 
 - Follow Microsoft Desktop Design Guidelines >>> https://docs.microsoft.com/en-us/windows/win32/uxguide/guidelines for Windows
 
-- Optimizization ~ Browser Caching & Code bundling (lot of it..I guess)  
+- Optimization ~ Browser Caching & Code bundling (lot of it..I guess)  
 
 - Smooth animations (Transitions, Button clicks, Awaiting time etc.) to match that of native desktop application
 
