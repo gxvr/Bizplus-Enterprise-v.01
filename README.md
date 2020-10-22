@@ -4,10 +4,6 @@
 - Open to public
 
 
-# Bizplus Enterprise
-
-Bizplus is a accounting software made with Electron, Angularjs and Sqlite to help small and large businesses managing their sales, expenses, inventory etc all under one roof. 
-
 ## Installation
 
 Use the node package manager to install dependencies.
