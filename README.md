@@ -1,7 +1,7 @@
 # Note: 
 
-- Major refactoring 
-- Open to the public
+- Major refactoring soon
+- Open to public
 
 
 # Bizplus Enterprise
