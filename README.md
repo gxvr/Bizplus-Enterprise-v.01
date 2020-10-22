@@ -1,7 +1,7 @@
 # Note: 
 
 - Major refactoring 
-- This codebase should not be shared with people who are not collaborators
+- Open to the public
 
 
 # Bizplus Enterprise
@@ -88,4 +88,4 @@ If you find a bug, open an issue with your expected result.
 
 
 ## License
-[Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+Do whatever you see fit
