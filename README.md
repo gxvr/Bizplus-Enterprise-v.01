@@ -1,7 +1,7 @@
 # Note: 
 
 - Major refactoring soon
-- Open to public
+- Open to public...YAY 🎉🎉
 
 
 ## Installation
