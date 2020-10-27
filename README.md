@@ -25,7 +25,7 @@ To preview the app on browser you need to install  [http-server](https://www.npm
 http-server
 ```
 
-**Note**: Some functionalities won't be available to preview on the browser as they are available on electron only. Use browser when you want to test or make changes to codes.
+**Note**: Some functionalities won't be available to preview on the browser as they are available on electron only. Use browser when you want to test or make changes to frontend UI.
 
 
 
