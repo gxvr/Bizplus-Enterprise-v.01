@@ -13,7 +13,7 @@
         "angular-translate": "^2.18.1",
         "angular-translate-loader-url": "^2.18.1",
         "angular-utils-pagination": "^0.11.1",
-        "electron": "^6.0.3",
+        "electron": "^13.6.6",
         "electron-badge": "^0.3.2",
         "electron-packager": "^14.0.4",
         "jquery": "^3.4.1",
